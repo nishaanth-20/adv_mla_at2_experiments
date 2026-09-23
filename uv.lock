@@ -24,7 +24,7 @@ dependencies = [
 requires-dist = [
     { name = "jupyterlab", specifier = "==4.6.1" },
     { name = "matplotlib", specifier = ">=3.11.2" },
-    { name = "my-krml-26044382", specifier = ">=0.0.3", index = "https://test.pypi.org/simple/" },
+    { name = "my-krml-26044382", specifier = "==0.0.4", index = "https://test.pypi.org/simple/" },
     { name = "optuna", specifier = "==4.9.0" },
     { name = "pandas", specifier = "==2.2.2" },
     { name = "pip" },
@@ -899,15 +899,17 @@ wheels = [
 
 [[package]]
 name = "my-krml-26044382"
-version = "0.0.3"
+version = "0.0.4"
 source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
+    { name = "numpy" },
     { name = "pandas" },
+    { name = "requests" },
     { name = "scikit-learn" },
 ]
-sdist = { url = "https://test-files.pythonhosted.org/packages/40/fa/d24bf837ddbbcc7ee8ff03e649c3908a438caee9f3fee5c21bf6f63ae9cf/my_krml_26044382-0.0.3.tar.gz", hash = "sha256:6daa0d48786d5ff9c98ef0c08080d096e589cb41fe863b6f500caa801a67f27b", size = 98729, upload-time = "2026-08-29T04:45:26.525Z" }
+sdist = { url = "https://test-files.pythonhosted.org/packages/1e/0b/b4d88ab76fbc369be4826b7ea2c3832578d65c9018da3bc90117eb4f667d/my_krml_26044382-0.0.4.tar.gz", hash = "sha256:c276b80f13def0666c17ae56626a00275e51d76e906d1d2b15bf31a71d71a4d2", size = 107972, upload-time = "2026-09-23T08:47:26.687Z" }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/6b/c9/8671fc16eb0c9c9af8028f578c7e28b7c534495093731c246ada756b9246/my_krml_26044382-0.0.3-py3-none-any.whl", hash = "sha256:2d132aad9deb8aab5b1c36f32b73308bb265f56b308edc1ddd62b13f76d3fa04", size = 5965, upload-time = "2026-08-29T04:45:24.459Z" },
+    { url = "https://test-files.pythonhosted.org/packages/75/c3/2ab96d315f8f9c0a6ce9441f3c158c7c9bd2167ce8936730044c624b23f8/my_krml_26044382-0.0.4-py3-none-any.whl", hash = "sha256:3e68dcaa730689bb949fcc352738eaa85800c32483a01b28ea80edf2ca4120e8", size = 14530, upload-time = "2026-09-23T08:47:24.535Z" },
 ]
 
 [[package]]

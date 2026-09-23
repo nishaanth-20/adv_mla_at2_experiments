@@ -18,7 +18,7 @@ classifiers = [
 dependencies = [
     "jupyterlab==4.6.1",
     "matplotlib>=3.11.2",
-    "my-krml-26044382>=0.0.3",
+    "my-krml-26044382==0.0.4",
     "optuna==4.9.0",
     "pandas==2.2.2",
     "pip",
