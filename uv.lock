@@ -17,6 +17,7 @@ dependencies = [
     { name = "requests" },
     { name = "ruff" },
     { name = "scikit-learn" },
+    { name = "utstd" },
     { name = "xgboost" },
 ]
 
@@ -24,7 +25,7 @@ dependencies = [
 requires-dist = [
     { name = "jupyterlab", specifier = "==4.6.1" },
     { name = "matplotlib", specifier = ">=3.11.2" },
-    { name = "my-krml-26044382", specifier = "==0.0.4", index = "https://test.pypi.org/simple/" },
+    { name = "my-krml-26044382", specifier = "==0.0.5", index = "https://test.pypi.org/simple/" },
     { name = "optuna", specifier = "==4.9.0" },
     { name = "pandas", specifier = "==2.2.2" },
     { name = "pip" },
@@ -32,6 +33,7 @@ requires-dist = [
     { name = "requests", specifier = ">=2.34.2" },
     { name = "ruff" },
     { name = "scikit-learn", specifier = "==1.6.1" },
+    { name = "utstd", specifier = ">=0.1.9" },
     { name = "xgboost", specifier = "==3.3.0" },
 ]
 
@@ -47,6 +49,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ed/aa/02910bdb8e2f1444f6654d5b296cd827d126f82209050ee7b1000f92ac4b/alembic-1.20.0.tar.gz", hash = "sha256:db505480647bc60386c5369402f4a57a506b7539c9e9ef5e270d45cbbe4939bf", size = 2093272, upload-time = "2026-09-11T19:09:11.126Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3f/27/78a89b55b0904d222183164e079b4ca56208e94eff1d35ad1f1ad5be9b06/alembic-1.20.0-py3-none-any.whl", hash = "sha256:77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d", size = 268719, upload-time = "2026-09-11T19:09:12.88Z" },
+]
+
+[[package]]
+name = "altair"
+version = "5.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+    { name = "jsonschema" },
+    { name = "narwhals" },
+    { name = "packaging" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/16/b1/f2969c7bdb8ad8bbdda031687defdce2c19afba2aa2c8e1d2a17f78376d8/altair-5.5.0.tar.gz", hash = "sha256:d960ebe6178c56de3855a68c47b516be38640b73fb3b5111c2a9ca90546dd73d", size = 705305, upload-time = "2024-11-23T23:39:58.542Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/aa/f3/0b6ced594e51cc95d8c1fc1640d3623770d01e4969d29c0bd09945fafefa/altair-5.5.0-py3-none-any.whl", hash = "sha256:91a310b926508d560fe0148d02a194f38b824122641ef528113d029fcd129f8c", size = 731200, upload-time = "2024-11-23T23:39:56.4Z" },
 ]
 
 [[package]]
@@ -899,7 +917,7 @@ wheels = [
 
 [[package]]
 name = "my-krml-26044382"
-version = "0.0.4"
+version = "0.0.5"
 source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
     { name = "numpy" },
@@ -907,9 +925,17 @@ dependencies = [
     { name = "requests" },
     { name = "scikit-learn" },
 ]
-sdist = { url = "https://test-files.pythonhosted.org/packages/1e/0b/b4d88ab76fbc369be4826b7ea2c3832578d65c9018da3bc90117eb4f667d/my_krml_26044382-0.0.4.tar.gz", hash = "sha256:c276b80f13def0666c17ae56626a00275e51d76e906d1d2b15bf31a71d71a4d2", size = 107972, upload-time = "2026-09-23T08:47:26.687Z" }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/75/c3/2ab96d315f8f9c0a6ce9441f3c158c7c9bd2167ce8936730044c624b23f8/my_krml_26044382-0.0.4-py3-none-any.whl", hash = "sha256:3e68dcaa730689bb949fcc352738eaa85800c32483a01b28ea80edf2ca4120e8", size = 14530, upload-time = "2026-09-23T08:47:24.535Z" },
+    { url = "https://test-files.pythonhosted.org/packages/c9/0f/5920a5ec4efaf2ce7867e25204a43b8ac53d4d635efbc01d8dc5067751bc/my_krml_26044382-0.0.5-py3-none-any.whl", hash = "sha256:49babfda708f46d0aed937772bc2523386c780770d38755e0c36d426a61a3cfc", size = 17638, upload-time = "2026-09-26T12:57:20.514Z" },
+]
+
+[[package]]
+name = "narwhals"
+version = "2.26.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/35/68/5351e34623d253423240ea7de3f8fc74fa8ab14b1ab3c0ec4ac8997413c9/narwhals-2.26.0.tar.gz", hash = "sha256:6b9cadca82f375c7e4cf584fdc86ca25da54827307a9c58f94547ee6104b82dd", size = 686970, upload-time = "2026-09-08T13:32:08.964Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/b5/1b84b2c784db76d69442334bc8b8748c840f13ca53be086f4f250ad4a0bc/narwhals-2.26.0-py3-none-any.whl", hash = "sha256:29326d74f107c347fd1009bd58e38d9f7c7c5b51e6de97bc93dbc325d9038b54", size = 474034, upload-time = "2026-09-08T13:32:07.159Z" },
 ]
 
 [[package]]
@@ -1618,6 +1644,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz", hash = "sha256:63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63", size = 458972, upload-time = "2026-09-15T19:29:36.253Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl", hash = "sha256:0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3", size = 135717, upload-time = "2026-09-15T19:29:34.577Z" },
+]
+
+[[package]]
+name = "utstd"
+version = "0.1.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "altair" },
+    { name = "ipython" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/13/1d9ddc7768e33be37b70bf8e076ac32cd9bef6f4fbcc58dd33f84f7b8204/utstd-0.1.9.tar.gz", hash = "sha256:10724dec2e9ef4300dcc63d59c3cc1be1027240b398a3a37f67edb4796b11a4c", size = 64702, upload-time = "2026-06-12T22:57:58.31Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e8/30/3585b96e10c84817d186861927ea6e3ea0019ff0c20cfae46d11ea3d0b1c/utstd-0.1.9-py3-none-any.whl", hash = "sha256:3acdafd7569ca1af13d4a9b516e2a08e8d8c28675ba092d9a5109c71cf0cb4e3", size = 2965, upload-time = "2026-06-12T22:57:59.029Z" },
 ]
 
 [[package]]

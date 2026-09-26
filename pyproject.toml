@@ -18,7 +18,7 @@ classifiers = [
 dependencies = [
     "jupyterlab==4.6.1",
     "matplotlib>=3.11.2",
-    "my-krml-26044382==0.0.4",
+    "my-krml-26044382==0.0.5",
     "optuna==4.9.0",
     "pandas==2.2.2",
     "pip",
@@ -26,6 +26,7 @@ dependencies = [
     "requests>=2.34.2",
     "ruff",
     "scikit-learn==1.6.1",
+    "utstd>=0.1.9",
     "xgboost==3.3.0",
 ]
 requires-python = "~=3.12.0"
