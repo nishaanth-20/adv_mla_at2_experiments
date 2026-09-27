@@ -1,0 +1,190 @@
+{
+  "target": "Climate Comfort Index",
+  "prediction_type": "Regression",
+  "algorithm": "Ridge Regression (StandardScaler + Ridge pipeline)",
+  "forecast_horizon": "3 Days",
+  "output_range": "0-100",
+  "location": {
+    "city": "Sydney",
+    "latitude": -33.8688,
+    "longitude": 151.2093
+  },
+  "training_period": "2000-01-30 to 2025-12-28",
+  "package_version": "0.0.5",
+  "required_history_days": 29,
+  "features": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "wind_speed_10m",
+    "cloud_cover",
+    "precipitation",
+    "wind_gusts_10m",
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "relative_humidity_2m_max",
+    "wind_speed_10m_max",
+    "cloud_cover_max",
+    "precipitation_hours",
+    "dew_point_2m",
+    "apparent_temperature",
+    "pressure_msl",
+    "pressure_msl_min",
+    "shortwave_radiation",
+    "cci",
+    "whi",
+    "whc",
+    "temperature_range",
+    "pressure_msl_change_1d",
+    "pressure_msl_change_3d",
+    "month",
+    "day_of_year",
+    "day_of_week",
+    "doy_sin",
+    "doy_cos",
+    "cci_lag_1",
+    "cci_lag_2",
+    "cci_lag_3",
+    "cci_lag_7",
+    "whi_lag_1",
+    "whi_lag_2",
+    "whi_lag_3",
+    "whi_lag_7",
+    "temperature_2m_lag_1",
+    "temperature_2m_lag_2",
+    "temperature_2m_lag_3",
+    "temperature_2m_lag_7",
+    "relative_humidity_2m_lag_1",
+    "relative_humidity_2m_lag_2",
+    "relative_humidity_2m_lag_3",
+    "relative_humidity_2m_lag_7",
+    "precipitation_lag_1",
+    "precipitation_lag_2",
+    "precipitation_lag_3",
+    "precipitation_lag_7",
+    "cloud_cover_lag_1",
+    "cloud_cover_lag_2",
+    "cloud_cover_lag_3",
+    "cloud_cover_lag_7",
+    "wind_speed_10m_lag_1",
+    "wind_speed_10m_lag_2",
+    "wind_speed_10m_lag_3",
+    "wind_speed_10m_lag_7",
+    "wind_gusts_10m_lag_1",
+    "wind_gusts_10m_lag_2",
+    "wind_gusts_10m_lag_3",
+    "wind_gusts_10m_lag_7",
+    "pressure_msl_lag_1",
+    "pressure_msl_lag_2",
+    "pressure_msl_lag_3",
+    "pressure_msl_lag_7",
+    "cci_roll3_mean",
+    "cci_roll7_mean",
+    "cci_roll14_mean",
+    "cci_roll30_mean",
+    "whi_roll3_mean",
+    "whi_roll7_mean",
+    "whi_roll14_mean",
+    "whi_roll30_mean",
+    "temperature_2m_roll3_mean",
+    "temperature_2m_roll7_mean",
+    "temperature_2m_roll14_mean",
+    "temperature_2m_roll30_mean",
+    "relative_humidity_2m_roll3_mean",
+    "relative_humidity_2m_roll7_mean",
+    "relative_humidity_2m_roll14_mean",
+    "relative_humidity_2m_roll30_mean",
+    "cloud_cover_roll3_mean",
+    "cloud_cover_roll7_mean",
+    "cloud_cover_roll14_mean",
+    "cloud_cover_roll30_mean",
+    "wind_gusts_10m_roll3_mean",
+    "wind_gusts_10m_roll7_mean",
+    "wind_gusts_10m_roll14_mean",
+    "wind_gusts_10m_roll30_mean",
+    "precipitation_roll3_sum",
+    "precipitation_roll7_sum",
+    "precipitation_roll14_sum",
+    "precipitation_roll30_sum"
+  ],
+  "feature_importance": {
+    "cci": 0.0852,
+    "temperature_2m": 0.0811,
+    "apparent_temperature": 0.0764,
+    "pressure_msl_min": 0.0526,
+    "whi": 0.0445,
+    "cloud_cover": 0.0367,
+    "doy_cos": 0.0254,
+    "temperature_2m_roll3_mean": 0.0249,
+    "dew_point_2m": 0.0214,
+    "cci_roll3_mean": 0.0213,
+    "pressure_msl_lag_1": 0.0206,
+    "pressure_msl": 0.0201,
+    "cci_lag_1": 0.0199,
+    "wind_speed_10m_max": 0.0198,
+    "whi_lag_1": 0.0196
+  },
+  "models": {
+    "cci_t_plus_1": {
+      "file": "cci_ridge_cci_t_plus_1.joblib",
+      "horizon_days": 1,
+      "hyperparameters": {
+        "alpha": 10.0
+      },
+      "test_performance_2023_2025": {
+        "rmse": 8.387,
+        "mae": 6.337,
+        "r2": 0.403,
+        "uncomfortable_days_missed": 0.755
+      }
+    },
+    "cci_t_plus_2": {
+      "file": "cci_ridge_cci_t_plus_2.joblib",
+      "horizon_days": 2,
+      "hyperparameters": {
+        "alpha": 10.0
+      },
+      "test_performance_2023_2025": {
+        "rmse": 9.484,
+        "mae": 7.113,
+        "r2": 0.236,
+        "uncomfortable_days_missed": 0.939
+      }
+    },
+    "cci_t_plus_3": {
+      "file": "cci_ridge_cci_t_plus_3.joblib",
+      "horizon_days": 3,
+      "hyperparameters": {
+        "alpha": 100.0
+      },
+      "test_performance_2023_2025": {
+        "rmse": 9.84,
+        "mae": 7.401,
+        "r2": 0.176,
+        "uncomfortable_days_missed": 0.994
+      }
+    }
+  },
+  "test_rmse_comparison_2023_2025": {
+    "Ridge": {
+      "cci_t_plus_1": 8.387,
+      "cci_t_plus_2": 9.484,
+      "cci_t_plus_3": 9.84
+    },
+    "XGBoost (final)": {
+      "cci_t_plus_1": 8.849,
+      "cci_t_plus_2": 10.326,
+      "cci_t_plus_3": 10.798
+    },
+    "climatology": {
+      "cci_t_plus_1": 10.145,
+      "cci_t_plus_2": 10.145,
+      "cci_t_plus_3": 10.144
+    },
+    "persistence": {
+      "cci_t_plus_1": 9.798,
+      "cci_t_plus_2": 12.059,
+      "cci_t_plus_3": 12.891
+    }
+  },
+  "limitations": "Accuracy decreases with the horizon (lowest for day 3), and uncomfortable days (CCI below 60) are often forecast as comfortable."
+}
