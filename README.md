@@ -14,7 +14,8 @@ from the Open-Meteo Historical Weather API:
 
 Related repositories:
 - Custom package (`my_krml_26044382`, v0.0.5 on TestPyPI): https://github.com/nishaanth-20/36120-26SP-group6-26044382-package
-- FastAPI deployment repository: *(to be added)*
+- FastAPI deployment repository: https://github.com/nishaanth-20/adv_mla_at2_api
+- Live API (Render): https://adv-mla-at2-api-vxja.onrender.com (interactive docs at `/docs`)
 
 ---
 
@@ -130,4 +131,4 @@ Other files in `models/` are artefacts of the earlier experiments, kept for repr
 ## AI usage
 
 Generative AI (Claude) was used to support coding, debugging and drafting explanations. All code and analysis
-were reviewed, run and validated by the student.
+were written, run and validated by the student.
